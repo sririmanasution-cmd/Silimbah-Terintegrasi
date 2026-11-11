@@ -1,11 +1,20 @@
-# Silimbah-Terintegrasi
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-**Tujuan** : Memenuhi Tugas Project S2 Pradita Simulasi Silimbah Terintegrasi untuk proses pembelajaran Pengolahan Black Water dan Grey water
+# Run and deploy your AI Studio app
 
-**Anggota Kelompok** :
-- Sri Rima Mulyati , 2620101030
-- Jumiah Kholidah , 2620101024
-- Telly Wardhani , 2620101038
-  
-**Tautan Aplikasi**
-https://silimbah-simulasi-gamifikasi-pengelolaan-air-limb.ai.studio/
+This contains everything you need to run your app locally.
+
+View your app in AI Studio: https://ai.studio/apps/cc9ed68d-0f3b-4fcc-bf03-b3970263b27f
+
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

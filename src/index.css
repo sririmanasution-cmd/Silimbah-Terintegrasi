@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom Water & Simulation Animations */
+@keyframes flowDash {
+  to {
+    stroke-dashoffset: -32;
+  }
+}
+
+@keyframes bubbleRise {
+  0% {
+    transform: translateY(0) scale(0.7);
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-45px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes plantSway {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+@keyframes sludgePulse {
+  0%, 100% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes fishFloat {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(12px, -3px);
+  }
+}
+
+.anim-flow-pipe {
+  stroke-dasharray: 8 6;
+  animation: flowDash 1.2s linear infinite;
+}
+
+.anim-bubble-1 {
+  animation: bubbleRise 2s ease-in infinite;
+}
+
+.anim-bubble-2 {
+  animation: bubbleRise 2.4s ease-in infinite 0.6s;
+}
+
+.anim-bubble-3 {
+  animation: bubbleRise 1.8s ease-in infinite 1.2s;
+}
+
+.anim-plant-1 {
+  transform-origin: bottom center;
+  animation: plantSway 3s ease-in-out infinite;
+}
+
+.anim-plant-2 {
+  transform-origin: bottom center;
+  animation: plantSway 3.6s ease-in-out infinite 0.8s;
+}
+
+.anim-fish {
+  animation: fishFloat 4s ease-in-out infinite;
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  @page {
+    size: A4 landscape;
+    margin: 10mm;
+  }
+}

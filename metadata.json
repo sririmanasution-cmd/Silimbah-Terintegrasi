@@ -1,0 +1,8 @@
+{
+  "name": "SiLimbah — Simulasi Gamifikasi Pengelolaan Air Limbah Domestik",
+  "description": "Media pembelajaran simulasi interaktif bergamifikasi untuk operator air limbah domestik (Black Water & Grey Water) dengan misi bertingkat, penanganan alert instalasi, dashboard evaluasi multi-operator, dan piagam kelulusan terverifikasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
