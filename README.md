@@ -6,8 +6,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/cc9ed68d-0f3b-4fcc-bf03-b3970263b27f
-
+View your app in AI Studio: https://silimbah-simulasi-gamifikasi-pengelolaan-air-limb.ai.studio/
 ## Run Locally
 
 **Prerequisites:**  Node.js
